@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+/* font-family: 'Inter', sans-serif; */
+
+/*=================
+   Table of Contents
+   1. Global variables
+   2. Layout
+   3. Components
+   4. Media Queries
+===================*/
+
+/*===============
+1. Global variables
+===============*/
+
+:root{
+
+    /* Desktop and Mobile widths */
+    --desktopWidth: 1440px;
+    --mobileWidth: 375px;
+
+    /* Colors */
+    --darkBlue: hsl(240, 38%, 20%);
+    --grayishBlue: hsl(240, 18%, 77%);
+    --backgroundColor: #fffefe;
+
+    /* Typography */
+    --fontFamily: 'Inter', sans-serif;
+    --fontSize: 32px;
+    --fontSizeMobile: 18px;
+    --heavyWeight: 700;
+    --middleWeight: 500;
+    --lightWeight: 300;
+}
+
+/*===============
+2. Layout
+===============*/
+
+body{
+    font-family: var(--fontFamily);
+    margin: 0;
+    background-color: var(--backgroundColor);
+}
+
+.main-column{
+    display: flex;
+    flex-direction: column;
+    /* background-color: dodgerblue; */
+}
+
+.top-column{
+    width:100%;
+    height: 320px;
+    background-color: rgb(129, 113, 113);
+    
+}
+
+.bottom-column{
+    display: block;
+    width:100%;
+    height: 320px;  
+    
+}
+
+.arrow-container{
+    display: inline-flex;
+    position: absolute;
+    width:50px;
+    height: 25px;
+    border-radius: 25px;
+    /* box-shadow: 5px 10px 18px #888787; */
+    background-color: var(--backgroundColor);
+    margin-left: -125px;
+    margin-top: 170px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/*===============
+3. Component
+===============*/
+
+.img-pattern-bg{
+    width: 200px;
+    position: relative;
+    margin-left: 15px;
+    margin-top: 10px;   
+}
+.img-avatar{
+    width: 160px;
+    position: absolute;
+    margin-left: -180px;
+    margin-top: 25px;
+    border-radius: 5px;   
+}
+.arrow{
+    height: 10px;
+    margin-left: 0px;
+}
+.shadow-element{
+    box-shadow:0px 1px 1px rgb(216, 212, 212);
+}
+.img-quote{
+    height: 35px;
+    position: relative;
+    margin-left: 90px;
+    
+}
+.img-curve{
+    position: relative;
+    height: 80px;
+    margin-top: 200px;   
+}
+
+.main-text-container{
+    position: absolute;
+    text-align: center;
+    width:320px;
+    height: 75px;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+/*===============
+4. Typography
+===============*/
+
+.main-text-container > p {
+    font-size:var(--fontSizeMobile);
+    color: var(--darkBlue);
+}
